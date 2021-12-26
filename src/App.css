@@ -1,0 +1,271 @@
+
+
+
+.App-header {
+  /* background: #74ebd5;  
+  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+  background: linear-gradient(to right, #ACB6E5, #a9e9dd);  */
+ background-image: url('https://elements-video-cover-images-0.imgix.net/files/d82df5c7-5d1d-4518-95e8-1a954394110a/inline_image_preview.jpg?auto=compress%2Cformat&fit=min&h=225&w=400&s=f7bdee87da2f4f074b7a2b7984808a6e');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+.main{
+  width: 100%;
+}
+
+.maindiv{
+  margin: 10%;
+  border-radius: 20%;
+
+}
+
+.detail{
+  background: #36D1DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8cabed, #9ae7ed);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #9ab9fa, #8de0e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin-bottom: 20px;
+
+}
+
+
+.detail h5,h6{
+  margin: 20px auto 20px auto;
+  text-align: center;
+  color: white;
+}
+
+.detail li{
+  list-style-type: none;
+  margin-top: 5px;
+  text-align: center;
+}
+.pic{
+  background: #1c92d2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #d6dadc, #6ec2f0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #afbcbf, #65c9ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: auto;
+border-top-left-radius: 20%;
+border-bottom-left-radius: 20%;
+margin-bottom: 20px;
+}
+.picdetail{
+  margin-bottom: 20px;
+}
+.picdetail h1{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  /* text-align: left; */
+  margin-top: 10px;
+  margin-left: -5px;
+}
+.picdetail h4{
+  color: white;
+  text-align: left;
+  margin-left: -90px;
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.picdetail h5{
+  color: white;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 25px;
+  font-size: 30px;
+}
+
+.picdetail i{
+  color: white;
+  font-size: 30px;
+  margin-left: -80px;
+  margin-top: 30px;
+}
+.pic img{
+  width: 200px;
+ 
+}
+
+@media only screen and (max-width: 1200px){
+  .pic{
+    width: 380px!important;
+  }
+
+  .picdetail h1{
+    font-size: 45px;
+  }
+
+  .picdetail h5{
+    margin-left: -10px;
+  }
+  .maindiv{
+    margin: 5%;
+  }
+
+  .picdetail i{
+    margin-left: 0px;
+  }
+
+  .picdetail h4{
+    margin-left: -45px;
+    font-size: 35px;
+  }
+
+  .detail{
+    width: 220px;
+  }
+}
+
+
+
+@media only screen and (max-width: 990px){
+  .pic{
+    width: 430px!important;
+  }
+  .maindiv{
+    margin: 5%;
+  }
+
+  .picdetail i{
+    margin-left: 0px;
+  }
+
+  .picdetail h4{
+    margin-left: -45px;
+  }
+
+  .detail{
+    width: 220px;
+  }
+
+ .detail .icon i{
+    width: 50px!important;;
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  .pic{
+    width: 325px!important;
+  }
+  .maindiv{
+    margin: 5%;
+  }
+.picdetail h1{
+  font-size: 30px;
+}
+  .picdetail i{
+    margin-left: -10px;
+    font-size: 15px;
+    margin-top: 18px;
+  }
+
+  .picdetail h4{
+    margin-left: -45px;
+    font-size: 25px;
+    margin-top: 15px;
+  }
+
+  .picdetail h5{
+    font-size: 20px;
+    margin-top: 17px;
+    margin-left: -15px;
+  }
+
+  .detail{
+    width: 150px!important;
+  }
+
+  .detail li{
+    font-size: 11px;
+    text-align: justify;
+  }
+
+  .detail h5{
+    font-size: 15px;
+    
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .picdetail i{
+    margin-left: -20px;
+    font-size: 20px;
+   
+  }
+
+  .picdetail h1{
+    font-size: 35px;
+    text-align: left;
+  }
+  .picdetail h5{
+    margin-top: 22px;
+  }
+
+  .picdetail h4{
+    margin-left: -30px;
+    font-size: 30px;
+ 
+  }
+
+  .detail{
+    width: 170px!important;
+  }
+
+
+}
+
+@media only screen and (max-width: 547px){
+.pic{
+  width: 305px!important;
+}
+}
+
+@media only screen and (max-width: 528px){
+  .main{
+    width: 105%;
+  }
+  }
+
+
+  @media only screen and (max-width: 500px){
+    .pic{
+      width: 215px!important;
+    }
+
+    .pic img{
+      width: 130px;
+    }
+
+
+    .picdetail i{
+      margin-left: -10px;
+      font-size: 10px;
+      margin-top: 3px;
+     
+    }
+  
+    .picdetail h1{
+      font-size: 23px;
+      margin-top: 19px;
+      text-align: left;
+    }
+  
+    .picdetail h4{
+      margin-left: -15px;
+      font-size: 18px;
+      margin-top: 24px;
+   
+    }
+  
+    .detail{
+      width: 170px!important;
+    }
+
+
+
+    }
