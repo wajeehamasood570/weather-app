@@ -58,38 +58,41 @@ margin-bottom: 20px;
 .picdetail h1{
   color: white;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   /* text-align: left; */
-  margin-top: 10px;
-  margin-left: -5px;
+  /* margin-top: 10px;
+  margin-left: -5px; */
 }
 .picdetail h4{
   color: white;
   text-align: left;
-  margin-left: -90px;
-  margin-top: 20px;
+  /* margin-left: -90px;
+  margin-top: 20px; */
   font-size: 40px;
 }
 
-.picdetail h5{
+.picdetail span{
   color: white;
   text-align: left;
-  margin-left: 0px;
-  margin-top: 25px;
-  font-size: 30px;
+  /* margin-left: -50px;
+  margin-top: 55px; */
+  font-size: 40px;
 }
 
 .picdetail i{
   color: white;
   font-size: 30px;
-  margin-left: -80px;
-  margin-top: 30px;
+  /* margin-left: -80px;
+  margin-top: 30px; */
 }
 .pic img{
   width: 200px;
  
 }
-
+.picdetail .icon{
+  width: 30%;
+  margin: 0%;
+}
 @media only screen and (max-width: 1200px){
   .pic{
     width: 380px!important;

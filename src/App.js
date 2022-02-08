@@ -27,11 +27,15 @@ const getWeatherInfo = async ( ) =>{
   const {speed} = data.wind;
   const {country} = data.sys;
 
+  const {icon} = data.weather[0];
+  console.log(icon);
+
   const mynewWeather = {
     temp,
     humidity,
     pressure,
     weathermood,
+    icon,
     name,
     speed,
     country
@@ -60,23 +64,7 @@ useEffect(() => {
 
 
 
-  return (
-
-
-    // {!city ? (
-    //   <p> No Data </p>
-    // )   : (
-    //   <div>
-    
-        
-    //     </div>
-    
-    // )
-    
-    // }
-
-
-    
+  return (  
     <div className="App">
       <header className="App-header">
     
@@ -87,23 +75,28 @@ useEffect(() => {
           <Container >
             <div className="maindiv">
               <Row style={{height:'auto'}}>
-                <Col xl={8} lg={8} md={8} sm={6} xs={8} className="pic">
+                <Col xl={8} lg={8} md={8} sm={4} xs={6} className="pic">
 
                   <img src="https://www.freepnglogos.com/uploads/hot-air-balloon-png/hot-air-balloon-ghantee-9.png" />
                   <Row className="picdetail">
-                    <Col sm={6} md={6} xs={4}>
+                    
+                    <Col sm={6} md={4} xs={3}>
                       <h1>
                       {tempInfo.temp}°</h1>
                         </Col>
-                    <Col sm={3} md={3} xs={4}>
+                    
+                    <Col sm={3} md={4} xs={3}>
                     <h4>
                      {searchValue}
                       </h4>
                     </Col>
-                    <Col sm={3} md={3}  xs={4}>
-                      <h5>
-                      {tempInfo.weathermood}
-                      </h5>
+
+                    <Col sm={3} md={4}  xs={3}>
+                      <span>
+                      <h4>{tempInfo.weathermood}
+                        <img className='icon'src={`http://openweathermap.org/img/w/${tempInfo.icon}.png`} />
+                      </h4>
+                      </span>
                     {/* <i className="fas fa-sun"></i> */}
                     </Col>
                   </Row>
@@ -113,7 +106,7 @@ useEffect(() => {
 
 
 
-                <Col sm={4} md={4} xs={3} className="detail">
+                <Col sm={4} md={4} xs={6} className="detail">
                   <h5>
                   <TextField id="standard-basic" label="Enter City Name" variant="standard" value={searchValue} onChange={ (e) => setSearchValue(e.target.value) } />
                   <Button variant="contained" type="button" onClick={getWeatherInfo} className='icon'><i className="fas fa-search"></i></Button>
